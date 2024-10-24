@@ -1,0 +1,19 @@
+#include "fast_di/global/GlobalDI.hpp"
+#include "../include/injectable.hpp"
+
+#include <iostream>
+
+namespace DI
+{
+
+DI_DYNAMIC_SUBSCRIBER_FOR(Injectable)
+{
+    fast_di::global_di::GlobalDI::builder()
+        .register_singleton<Injectable>()
+			.as_interface<IInjectable>()
+			.constructed_with<>()
+			.done();
+    std::cout << "Registered Injectable" << std::endl;
+}
+
+}

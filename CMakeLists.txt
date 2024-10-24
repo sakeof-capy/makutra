@@ -7,5 +7,10 @@ endif()
 
 project ("makutra")
 
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 add_subdirectory ("makutra")
 add_subdirectory ("dependencies/fast_di")
+add_subdirectory ("di_generated")
+add_subdirectory ("hello_world")

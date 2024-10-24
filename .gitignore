@@ -402,5 +402,8 @@ FodyWeavers.xsd
 # Visual Studio 2019 cache/options directory
 .vs/
 
-# Add this line
+# Targets
 out/
+di_generated/
+build/
+_prebuild/
